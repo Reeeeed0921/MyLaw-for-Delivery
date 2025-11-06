@@ -1,0 +1,128 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 2;
+  padding-top: calc(7vh + 88rpx + 20rpx); /* 内容从 hint 下方开始，避免重叠（与 .page-hint 的 top 对齐） */
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-hint {
+  position: fixed;    /* 统一成固定定位 */
+  top: 7vh;           /* 保持与你设定一致的高度 */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 88rpx;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+  border-bottom: 2rpx solid #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10rpx;
+}
+
+.title {
+  display: none;
+  font-size: 48rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40rpx;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  font-size: 32rpx;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hint-banner {
+  width: 92%;
+  height: 22vh;           /* 大约占剩余页面的四分之一 */
+  border-radius: 24rpx;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.15);
+  margin-top: 0;          /* 由容器 padding-top 控制与 hint 的间距 */
+}
+
+.hint-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hint-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 新增：两卡片容器与样式 */
+.tips-cards {
+  width: 92%;
+  margin-top: 20rpx;      /* 与上方 banner 间距 */
+  display: flex;
+  gap: 20rpx;             /* 两卡片间距 */
+}
+
+.tips-card {
+  flex: 1;
+  border-radius: 24rpx;
+  padding: 28rpx;
+  min-height: 160rpx;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.18);
+}
+
+.tips-card--tricks {
+  background: rgba(74, 144, 226, 0.25); /* 蓝色轻微高亮 */
+}
+
+.tips-card--law {
+  background: rgba(255, 159, 67, 0.25); /* 橙色轻微高亮 */
+}
+
+.card-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 8rpx;
+}
+
+.card-desc {
+  font-size: 24rpx;
+  opacity: 0.9;
+}
+
+.card-hover {
+  opacity: 0.9;
+}

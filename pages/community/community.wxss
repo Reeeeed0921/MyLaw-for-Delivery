@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 2;
+  padding: 108rpx 20rpx 20rpx; /* 统一：标题固定后预留空间 */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-hint {
+  position: fixed;        /* 统一到固定定位 */
+  top: 7vh;               /* 统一高度 */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 88rpx;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+  border-bottom: 2rpx solid #fff;
+  display: flex;
+  align-items: flex-end;   /* 和普及锦囊一致，文字贴近横线 */
+  justify-content: center;
+  padding-bottom: 10rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40rpx;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  font-size: 32rpx;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

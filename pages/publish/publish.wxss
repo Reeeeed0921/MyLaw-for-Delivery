@@ -1,0 +1,38 @@
+.container {
+  padding: 80px 20px 20px;
+  background-color: #f2f2f7;
+  min-height: 100vh;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.title-input,
+.content-input {
+  width: 100%;
+  padding: 10px;
+  
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.content-input {
+  height: 150px;
+}
+
+.picker {
+  padding: 10px;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #007aff;
+  color: white;
+  border-radius: 8px;
+}

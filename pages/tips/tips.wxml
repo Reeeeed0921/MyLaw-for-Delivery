@@ -1,0 +1,30 @@
+<view class="container">
+  <image class="background-image" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/background.jpg" mode="aspectFill"></image>
+  <view class="content-overlay">
+    <view class="page-hint">普及锦囊</view>
+    <view class="hint-banner">
+      <swiper class="hint-swiper" indicator-dots="true" autoplay="true" interval="4000" circular="true">
+        <swiper-item>
+          <image class="hint-img" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/2-2.jpg" mode="aspectFill" />
+        </swiper-item>
+        <swiper-item>
+          <image class="hint-img" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/2-1.jpg" mode="aspectFill" />
+        </swiper-item>
+        
+      </swiper>
+    </view>
+    <!-- 两个卡片框：维权小妙招 / 普法知识 -->
+    <view class="tips-cards">
+      <view class="tips-card tips-card--tricks" data-id="tricks" bind:tap="onCardTap" hover-class="card-hover">
+        <view class="card-title">维权小妙招</view>
+        <view class="card-desc">快学快用的维权技巧合集</view>
+      </view>
+      <view class="tips-card tips-card--law" data-id="law" bind:tap="onCardTap" hover-class="card-hover">
+        <view class="card-title">普法知识</view>
+        <view class="card-desc">骑手相关法律法规知识</view>
+      </view>
+    </view>
+    <view class="title">普及锦囊</view>
+    
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">普法知识</view>
+  <view class="content">
+    这里是“普法知识”子页面，占位内容。你可以在此添加法条解读、案例、图文等。
+  </view>
+</view>

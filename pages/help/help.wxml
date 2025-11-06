@@ -1,0 +1,59 @@
+<view class="container">
+  <image class="background-image" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/background.jpg" mode="aspectFill"></image>
+  <view class="content-overlay">
+    <view class="page-hint">专业求助</view>
+    <!-- 小法宝助手入口按钮 -->
+    <view class="assistant-entry" bind:tap="onAssistantTap" hover-class="assistant-entry--hover">
+      <image class="assistant-logo" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/ailogo.jpg" mode="aspectFit" />
+      <view class="assistant-body">
+        <view class="assistant-title">Hi，我是法小宝</view>
+        <view class="assistant-pill">
+          <text class="assistant-pill-text">有什么问题尽管问我</text>
+          <text class="assistant-arrow">›</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 快捷功能（四个带 emoji 的项） -->
+    <view class="quick-actions">
+      <view class="action-item" data-action="faq" bind:tap="onActionTap" hover-class="action-item--hover">
+        <text class="action-emoji">💬</text>
+        <view class="action-label">常见问题</view>
+      </view>
+      <view class="action-item" data-action="cs" bind:tap="onActionTap" hover-class="action-item--hover">
+        <text class="action-emoji">🎧</text>
+        <view class="action-label">客服专业</view>
+        <view class="action-label-sub">回答</view>
+      </view>
+      <view class="action-item" data-action="lawyer" bind:tap="onActionTap" hover-class="action-item--hover">
+        <text class="action-emoji">👤</text>
+        <view class="action-label">联系律师</view>
+      </view>
+      <view class="action-item" data-action="template" bind:tap="onActionTap" hover-class="action-item--hover">
+        <text class="action-emoji">📄</text>
+        <view class="action-label">文书模板</view>
+      </view>
+    </view>
+
+    <!-- 分割：推荐律师 -->
+    <view class="section-divider">
+      <view class="section-line"></view>
+      <view class="section-label">推荐律师</view>
+      <view class="section-line"></view>
+    </view>
+
+    <!-- 下方区域可滚动，不受上方影响 -->
+    <scroll-view class="lawyer-scroll" scroll-y="true">
+      <view class="lawyer-list">
+        <view class="lawyer-card">示例律师 A · 擅长劳动纠纷</view>
+        <view class="lawyer-card">示例律师 B · 擅长合同纠纷</view>
+        <view class="lawyer-card">示例律师 C · 擅长婚姻家庭</view>
+        <view class="lawyer-card">示例律师 D · 擅长交通事故</view>
+        <view class="lawyer-card">示例律师 E · 擅长刑事辩护</view>
+        <view class="lawyer-card">示例律师 F · 擅长知识产权</view>
+        <view class="lawyer-card">示例律师 G · 擅长房产纠纷</view>
+        <view class="lawyer-card">示例律师 H · 擅长公司治理</view>
+      </view>
+    </scroll-view>
+  </view>
+ </view>

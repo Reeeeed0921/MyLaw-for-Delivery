@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">维权小妙招</view>
+  <view class="content">
+    这里是“维权小妙招”子页面，占位内容。你可以在此添加卡片、图文或列表。
+  </view>
+</view>

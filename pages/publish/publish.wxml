@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="form">
+    <!-- 帖子标题 -->
+    <view class="form-group">
+      <input class="title-input" placeholder="请输入帖子标题" value="{{title}}" bindinput="onTitleInput" />
+    </view>
+
+    <!-- 帖子内容 -->
+    <view class="form-group">
+      <textarea class="content-input" placeholder="请输入帖子内容" value="{{content}}" bindinput="onContentInput"></textarea>
+    </view>
+
+    <!-- 分类选择 -->
+    <view class="form-group">
+      <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange">
+        <view class="picker">
+          当前选择：{{categories[categoryIndex]}}
+        </view>
+      </picker>
+    </view>
+
+    <!-- 发布按钮 -->
+    <button class="submit-btn" type="primary" bindtap="onPublish">发布</button>
+  </view>
+</view>

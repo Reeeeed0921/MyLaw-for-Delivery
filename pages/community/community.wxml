@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="background-image" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/background.jpg" mode="aspectFill"></image>
+  <view class="content-overlay">
+    <view class="page-hint">共享社区</view>
+    
+  </view>
+</view>
