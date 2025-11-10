@@ -1,6 +1,20 @@
 <view class="container">
   <view class="page-hint">维权小妙招</view>
   <view class="content">
-    这里是“维权小妙招”子页面，占位内容。你可以在此添加卡片、图文或列表。
+    <block wx:if="{{cards.length}}">
+      <swiper class="tips-swiper" indicator-dots="true" circular="true" autoplay="false" current="{{current}}" bindchange="onSwiperChange">
+        <block wx:for="{{cards}}" wx:key="_id">
+          <swiper-item>
+            <view class="card">
+              <view class="card-title">{{item.title}}</view>
+              <view class="card-content">{{item.content}}</view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </block>
+    <block wx:else>
+      <view class="empty">暂无卡片内容，请稍后重试</view>
+    </block>
   </view>
 </view>

@@ -2,6 +2,35 @@
   <image class="background-image" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/background.jpg" mode="aspectFill"></image>
   <view class="content-overlay">
     <view class="page-hint">个人设置</view>
-   
-  </view>
+    <view class="menu">
+      <view class="menu-item" data-url="/pages/profile/login/login" bindtap="goto">
+        <view class="menu-title">登陆注册</view>
+        <view class="menu-desc">微信登录、手机号注册</view>
+      </view>
+      <view class="menu-item" data-url="/pages/profile/account/account" bindtap="goto">
+        <view class="menu-title">账号管理</view>
+        <view class="menu-desc">头像昵称、绑定信息</view>
+      </view>
+      <view class="menu-item" data-url="/pages/profile/features/features" bindtap="goto">
+        <view class="menu-title">功能设置</view>
+        <view class="menu-desc">通知、隐私、展示偏好</view>
+      </view>
+      <view class="menu-item" data-url="/pages/profile/rights/rights" bindtap="goto">
+        <view class="menu-title">权益档案</view>
+        <view class="menu-desc">保存/查看维权资料</view>
+      </view>
+      <view class="menu-item" data-url="/pages/profile/feedback/feedback" bindtap="goto">
+        <view class="menu-title">意见反馈</view>
+        <view class="menu-desc">问题与建议提交</view>
+      </view>
+      <view class="menu-item" data-url="/pages/profile/services/services" bindtap="goto">
+        <view class="menu-title">服务入口</view>
+        <view class="menu-desc">常用服务聚合</view>
+      </view>
+      <view class="menu-item" data-url="/pages/profile/progress/progress" bindtap="goto">
+        <view class="menu-title">维权进度跟踪</view>
+        <view class="menu-desc">流程节点与状态</view>
+      </view>
+    </view>
+   </view>
 </view>

@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">服务入口</view>
+  <view class="content">
+    <view class="placeholder">聚合常用服务的快捷入口。</view>
+  </view>
+</view>

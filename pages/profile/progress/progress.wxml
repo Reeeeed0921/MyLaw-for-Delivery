@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">维权进度跟踪</view>
+  <view class="content">
+    <view class="placeholder">展示案件流程节点与状态时间线。</view>
+  </view>
+</view>

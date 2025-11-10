@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">账号管理</view>
+  <view class="content">
+    <view class="placeholder">管理头像昵称、绑定手机号、实名认证等。</view>
+  </view>
+</view>

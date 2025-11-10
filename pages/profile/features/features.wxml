@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">功能设置</view>
+  <view class="content">
+    <view class="placeholder">开关通知、隐私与展示偏好等设置。</view>
+  </view>
+</view>

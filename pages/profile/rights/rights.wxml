@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">权益档案</view>
+  <view class="content">
+    <view class="placeholder">集中管理你的维权资料与卡片。</view>
+  </view>
+</view>

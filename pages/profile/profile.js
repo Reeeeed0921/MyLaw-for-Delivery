@@ -12,7 +12,7 @@ Page({
   },
 
   onShow: function () {
-    
+    wx.setNavigationBarTitle({ title: '个人设置' });
   },
 
   onHide: function () {
@@ -33,5 +33,11 @@ Page({
 
   onShareAppMessage: function () {
     
+  },
+
+  goto(e) {
+    const url = e?.currentTarget?.dataset?.url;
+    if (!url) return;
+    wx.navigateTo({ url });
   }
 })

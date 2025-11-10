@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-hint">登陆注册</view>
+  <view class="content">
+    <view class="placeholder">这里将提供微信登录与手机号注册入口。</view>
+  </view>
+</view>

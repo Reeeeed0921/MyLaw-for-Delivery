@@ -17,7 +17,7 @@
 .content-overlay {
   position: relative;
   z-index: 2;
-  padding: 108rpx 20rpx 20rpx; /* 统一：标题固定后预留空间 */
+  padding: calc(7vh + 88rpx + 20rpx) 20rpx 20rpx; /* 确保内容在 hint 线下方 */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -59,4 +59,31 @@
   color: #ffffff;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  width: 100%;
+  max-width: 900rpx;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20rpx;
+  margin-top: 8rpx; /* hint 线下的轻微间距 */
+}
+
+.menu-item {
+  background: rgba(255,255,255,0.9);
+  border-radius: 24rpx;
+  padding: 28rpx;
+}
+
+.menu-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #1f2329;
+}
+
+.menu-desc {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: #646a73;
 }

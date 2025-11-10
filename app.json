@@ -96,7 +96,14 @@
     "pages/col/skyline/col",
     "pages/color-picker/color-picker",
     "pages/guide/guide",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/profile/login/login",
+    "pages/profile/account/account",
+    "pages/profile/features/features",
+    "pages/profile/rights/rights",
+    "pages/profile/feedback/feedback",
+    "pages/profile/services/services",
+    "pages/profile/progress/progress"
   ],
   "subpackages": [
     {

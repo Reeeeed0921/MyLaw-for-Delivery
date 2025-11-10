@@ -27,3 +27,42 @@
   font-size: 28rpx;
   color: #3a3f47;
 }
+
+/* swiper 区域高度：避开顶部固定提示栏 */
+.tips-swiper {
+  width: 100%;
+  height: 68vh;
+}
+
+/* 卡片样式 */
+.card {
+  margin: 24rpx;
+  padding: 28rpx;
+  background: #ffffff;
+  border-radius: 24rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #1f2329;
+  margin-bottom: 12rpx;
+}
+
+.card-content {
+  padding-top: 8rpx;
+  font-size: 26rpx;
+  color: #3a3f47;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.empty {
+  margin: 48rpx auto;
+  text-align: center;
+  color: #8a8f99;
+  font-size: 28rpx;
+}
