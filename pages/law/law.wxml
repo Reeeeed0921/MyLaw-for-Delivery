@@ -1,6 +1,33 @@
 <view class="container">
   <view class="page-hint">普法知识</view>
   <view class="content">
-    这里是“普法知识”子页面，占位内容。你可以在此添加法条解读、案例、图文等。
+    <swiper class="law-swiper" indicator-dots="true" autoplay="false" circular="false">
+      <swiper-item>
+        <scroll-view class="law-scroll" scroll-y="true">
+          <view class="law-card">
+            <view class="card-section">
+              <view class="section-header">标题</view>
+              <view class="section-body"><text class="section-text">{{knowledge.number}}</text></view>
+            </view>
+            <view class="card-section">
+              <view class="section-header">原文</view>
+              <view class="section-body"><text class="section-text pre">{{knowledge.law}}</text></view>
+            </view>
+            <view class="card-section">
+              <view class="section-header">适用情况</view>
+              <view class="section-body"><text class="section-text">{{knowledge.case}}</text></view>
+            </view>
+            <view class="card-section">
+              <view class="section-header">相关法规</view>
+              <view class="section-body">
+                <view class="content-item" wx:for="{{knowledge.contents}}" wx:key="index">
+                  <text class="section-text">{{item}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
   </view>
 </view>

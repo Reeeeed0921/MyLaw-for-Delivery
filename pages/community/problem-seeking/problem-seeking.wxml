@@ -1,0 +1,27 @@
+<view class="container">
+  <image class="background-image" src="cloud://cloud1-1gfjke3b6beabd22.636c-cloud1-1gfjke3b6beabd22-1385287281/background.jpg" mode="aspectFill"></image>
+  <view class="content-overlay">
+    <view class="page-hint">问题求助</view>
+    <view class="page">
+      <view class="publish">
+        <input class="input" placeholder="标题（简要描述问题）" value="{{newTitle}}" bindinput="handleTitleInput" />
+        <textarea class="textarea" placeholder="详细问题描述、已尝试的办法…" value="{{newContent}}" bindinput="handleContentInput"></textarea>
+        <button class="btn" bindtap="publishPost">发布求助</button>
+      </view>
+
+      <view wx:if="{{posts.length === 0}}" class="empty">暂无求助，发起你的问题吧～</view>
+
+      <view wx:for="{{posts}}" wx:key="index" class="post">
+        <view class="post-title">{{item.title}}</view>
+        <view class="post-content">{{item.content}}</view>
+        <view class="divider"></view>
+        <view class="reply">
+          <view class="reply-title">回复与建议</view>
+          <view wx:for="{{item.replies}}" wx:key="index" class="reply-item">- {{item}}</view>
+          <input class="input" placeholder="提供思路或建议" value="{{item.replyInput}}" data-index="{{index}}" bindinput="handleReplyInput" />
+          <button class="btn-secondary" data-index="{{index}}" bindtap="sendReply">发送回复</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -27,3 +27,54 @@
   font-size: 28rpx;
   color: #3a3f47;
 }
+
+.law-swiper {
+  width: 100%;
+  height: 70vh;
+}
+
+.law-scroll {
+  height: 100%;
+}
+
+.law-card {
+  height: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 16rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.06);
+  padding: 24rpx;
+}
+
+.card-section {
+  margin-bottom: 24rpx;
+}
+
+.section-header {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1f2329;
+  margin-bottom: 12rpx;
+}
+
+.section-body {
+  min-height: 120rpx;
+  border: 2rpx dashed #e7e9ec;
+  border-radius: 12rpx;
+  background: #f7f8fa;
+}
+
+.section-text {
+  display: block;
+  padding: 16rpx;
+  font-size: 28rpx;
+  color: #3a3f47;
+}
+
+.section-text.pre {
+  white-space: pre-wrap;
+}
+
+.content-item + .content-item {
+  border-top: 2rpx dashed #e7e9ec;
+}
